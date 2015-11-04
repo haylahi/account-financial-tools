@@ -63,14 +63,6 @@ class Currency_getter_factory():
     """
     def register(self, class_name):
         allowed = [
-            'CH_ADMIN_getter',
-            'PL_NBP_getter',
-            'ECB_getter',
-            'GOOGLE_getter',
-            'YAHOO_getter',
-            'MX_BdM_getter',
-            'CA_BOC_getter',
-            'RO_BNR_getter',
         ]
         if class_name in allowed:
             exec "from .update_service_%s import %s" % \
